@@ -18,13 +18,19 @@ public class Main {
     public static void main(String[] args) {
        
         try{
-            FileInputStream fstream = new FileInputStream("C:\\Users\\Luis\\Desktop\\Java\\postfix\\Postfix\\Hoja de Trabajo No.2\\src\\Datos.txt");
-            DataInputStream entrada = new DataInputStream(fstream);
-            BufferedReader buffer = new BufferedReader(new InputStreamReader(entrada));
-            String strLinea;
             
-            while ((strLinea = buffer.readLine()) != null)   {
-                 System.out.println (strLinea);
+            FileInputStream archivo = new FileInputStream("C:\\Users\\Luis\\Desktop\\Java\\postfix\\Postfix\\Hoja de Trabajo No.2\\src\\Datos.txt");
+            DataInputStream entrada = new DataInputStream(archivo);
+            BufferedReader buffer = new BufferedReader(new InputStreamReader(entrada));
+            String linea;
+            
+            while ((linea = buffer.readLine()) != null)   {
+                
+                String[] lineaArray = linea.split(" ");
+                
+                for (int i = 0; i < numerosComoArray.length; i++) {
+                    System.out.println(numerosComoArray[i]);
+                }
             }
             entrada.close();
         }catch (Exception e){ 
