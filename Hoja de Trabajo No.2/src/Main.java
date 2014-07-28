@@ -1,3 +1,9 @@
+//Universidad del Valle de Guatemala
+//Erick Saucedo 13167
+//Kimberly Guzman 13642
+//Luis Gomez 13
+
+
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -28,5 +34,3 @@ public class Main {
     }
 }
 
-
-//Ya se puede
