@@ -10,9 +10,9 @@ import java.util.Stack;
 public class Main {
 
     public static void main(String[] args) {
-        /*
+       
         try{
-            FileInputStream fstream = new FileInputStream("LeerArchivo.java");
+            FileInputStream fstream = new FileInputStream("C:\\Users\\Luis\\Desktop\\Java\\postfix\\Postfix\\Hoja de Trabajo No.2\\src\\Datos.txt");
             DataInputStream entrada = new DataInputStream(fstream);
             BufferedReader buffer = new BufferedReader(new InputStreamReader(entrada));
             String strLinea;
@@ -23,7 +23,7 @@ public class Main {
             entrada.close();
         }catch (Exception e){ 
             System.err.println("Archivo no encontrado");
-        }*/
+        }
        
     }
 }
