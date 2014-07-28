@@ -18,6 +18,9 @@ public class Main {
     public static void main(String[] args) {
        
         Pila operandos = new Pila();
+        int resultado = 0;
+        int operando1 = 0;
+        int operando2 = 0;
         
         try{
             //Se abre el archivo Datos.txt y se lee linea por linea. 
@@ -39,11 +42,56 @@ public class Main {
                         
                     }catch(Exception e){
                         
-                        while(operandos.empty()==false){
-                            System.out.println(operandos.pop());
-                            System.out.println(lineaArray[i]);
+                        if(lineaArray[i].equals("+")){
+                            
+                            operando1 = (int) operandos.pop();
+                            if ((operandos.peek())!= null){
+                                operando2 = (int)operandos.pop();
+                            }else{
+                                operando2= resultado;
+                            }
+                            resultado = operando2 + operando1;
+                            System.out.println( operando2 + " + " + operando1);
+                            System.out.println (resultado);
                         }
                         
+                        if(lineaArray[i].equals("-")){
+                             operando1 = (int) operandos.pop();
+                            if ((operandos.peek())!= null){
+                                operando2 = (int)operandos.pop();
+                            }else{
+                                operando2= resultado;
+                            }
+                            resultado = operando2 - operando1;
+                            System.out.println( operando2 + " - " + operando1);
+                            System.out.println (resultado);
+                        }
+                        
+                        if(lineaArray[i].equals("*")){
+                        
+                             operando1 = (int) operandos.pop();
+                            if ((operandos.peek())!= null){
+                                operando2 = (int)operandos.pop();
+                            }else{
+                                operando2= resultado;
+                            }
+                            resultado = operando2 * operando1;
+                            System.out.println( operando2 + " * " + operando1);
+                            System.out.println (resultado);
+                        }
+                        
+                        if(lineaArray[i].equals("/")){
+                        
+                            operando1 = (int) operandos.pop();
+                            if ((operandos.peek())!= null){
+                                operando2 = (int)operandos.pop();
+                            }else{
+                                operando2= resultado;
+                            }
+                            resultado = operando2 / operando1;
+                            System.out.println( operando2 + " / " + operando1);
+                            System.out.println (resultado);
+                        }
                         
                         
                     }
