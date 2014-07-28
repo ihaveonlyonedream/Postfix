@@ -28,8 +28,8 @@ public class Main {
                 
                 String[] lineaArray = linea.split(" ");
                 
-                for (int i = 0; i < numerosComoArray.length; i++) {
-                    System.out.println(numerosComoArray[i]);
+                for (int i = 0; i < lineaArray.length; i++) {
+                    System.out.println(lineaArray[i]);
                 }
             }
             entrada.close();
@@ -39,5 +39,3 @@ public class Main {
        
     }
 }
-hola holaasdf 
-// si no aparece esto en el coso me mato x.x
