@@ -35,7 +35,7 @@ public class Main {
         //Lectura del documento Datos.txt
         try{
             //Se abre el archivo Datos.txt y se lee linea por linea. 
-            FileInputStream archivo = new FileInputStream("C:\\Users\\Luis\\Desktop\\Java\\postfix\\Postfix\\Hoja de Trabajo No.2\\src\\Datos.txt");
+            FileInputStream archivo = new FileInputStream("C:\\Users\\Luis\\Desktop\\Java\\postfix\\Postfix\\Postfix\\Hoja de Trabajo No.2\\src\\Datos.txt");
             DataInputStream entrada = new DataInputStream(archivo);
             BufferedReader buffer = new BufferedReader(new InputStreamReader(entrada));
             String linea;
